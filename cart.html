@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Steve Store - Hàng xách tay chính hãng</title>
+        <title>Giỏ hàng Steve Store</title>
 
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -190,7 +190,60 @@
                                     <span class="cart__heading">Giỏ hàng</span>
                                     <span class="cart-qty">0</span>
                                     <div class="cart-content">
-                                        <div class="cart-list"></div>
+                                        <div class="cart-list">
+                                            <!-- <div class="cart-item">
+                                                <div class="cart-item__remove">
+                                                    <i
+                                                        class="fa-solid fa-circle-xmark"
+                                                    ></i>
+                                                </div>
+
+                                                <figure
+                                                    class="cart-item__img-wrap"
+                                                >
+                                                    <img
+                                                        src="./assets/img/man-shoes/shoes-1.png"
+                                                        alt=""
+                                                        class="cart-item__img"
+                                                    />
+                                                </figure>
+
+                                                <div class="cart-item__info">
+                                                    <h3 class="cart-item__name">
+                                                        Giày nike court vision
+                                                        low next nature 'sail
+                                                        dark beetroot'
+                                                        fb8942-133
+                                                    </h3>
+
+                                                    <span
+                                                        class="cart-item__price"
+                                                    >
+                                                        999999
+                                                    </span>
+
+                                                    <div
+                                                        class="cart-item__quantity"
+                                                    >
+                                                        <button
+                                                            class="item-quantity__down"
+                                                        >
+                                                            -
+                                                        </button>
+                                                        <div
+                                                            class="number__quantity"
+                                                        >
+                                                            10
+                                                        </div>
+                                                        <button
+                                                            class="item-quantity__up"
+                                                        >
+                                                            +
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
 
                                         <div class="cart-total">
                                             <span class="cart-total__title">
@@ -204,7 +257,7 @@
 
                                         <div class="cart-bottom">
                                             <a
-                                                href="./product.html"
+                                                href="#!"
                                                 class="btn cart-bottom__link"
                                             >
                                                 GIỎ HÀNG
@@ -239,10 +292,7 @@
                                     </a>
                                 </li>
                                 <li class="navbar-item">
-                                    <a
-                                        href="#!"
-                                        class="nav-link nav-link__active"
-                                    >
+                                    <a href="#!" class="nav-link">
                                         Trang chủ
                                     </a>
                                 </li>
@@ -310,205 +360,288 @@
             </div>
         </header>
 
-        <main>
-            <!-- Banner -->
-            <div class="banner">
-                <div class="container">
-                    <figure class="banner__img-wrap">
-                        <img
-                            src="./assets/img/banner.png"
-                            alt=""
-                            class="banner__img"
-                        />
-                    </figure>
-                </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html" class="breadcrumb-item__link">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">Giỏ hàng</li>
+                </ul>
             </div>
+        </div>
 
-            <div class="main-container">
-                <div class="container">
-                    <div class="main-container__inner">
-                        <aside class="main-aside">
-                            <section class="aside-column">
-                                <h2 class="aside-column__heading">
-                                    <i class="fa-solid fa-bars"></i>
-                                    Danh mục sản phẩm
-                                </h2>
-                                <ul class="aside-column__list">
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            JORDAN
-                                        </a>
-                                    </li>
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            ADIDAS
-                                        </a>
-                                    </li>
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            NIKE
-                                        </a>
-                                    </li>
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            MLB
-                                        </a>
-                                    </li>
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            DOMBA
-                                        </a>
-                                    </li>
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            DÉP
-                                        </a>
-                                    </li>
+        <main>
+            <div class="container">
+                <div class="cart-head">
+                    <div class="cart-head__item" style="width: 17%">
+                        ẢNH SẢN PHẨM
+                    </div>
+                    <div class="cart-head__item" style="width: 33%">
+                        TÊN SẢN PHẨM
+                    </div>
+                    <div class="cart-head__item" style="width: 15%">
+                        ĐƠN GIÁ
+                    </div>
+                    <div class="cart-head__item" style="width: 14%">
+                        SỐ LƯỢNG
+                    </div>
+                    <div class="cart-head__item" style="width: 15%">
+                        THÀNH TIỀN
+                    </div>
+                    <div class="cart-head__item" style="width: 6%">XÓA</div>
+                </div>
 
-                                    <li class="aside-column-item">
-                                        <a href="#!" class="aside-column-link">
-                                            SALE TẾT 2023
-                                        </a>
-                                    </li>
-                                </ul>
-                            </section>
-
-                            <section class="aside-column">
-                                <h2 class="aside-column__heading">
-                                    Hỗ trợ trực tuyến
-                                </h2>
-                                <div class="aside-column__contact">
-                                    <img
-                                        src="./assets/img/contact/facebook.png"
-                                        alt=""
-                                        class="aside-column__contact-img"
-                                    />
-                                    <div class="aside-column__contact-info">
-                                        <p class="aside-column__contact-name">
-                                            Facebook
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="aside-column__contact-link"
-                                        >
-                                            Stevestore.vn
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="aside-column__contact">
-                                    <img
-                                        src="./assets/img/contact/phone.png"
-                                        alt=""
-                                        class="aside-column__contact-img"
-                                    />
-                                    <div class="aside-column__contact-info">
-                                        <p class="aside-column__contact-name">
-                                            Tư vấn mua hàng
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="aside-column__contact-link"
-                                        >
-                                            0858.28.27.28
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="aside-column__contact">
-                                    <img
-                                        src="./assets/img/contact/instagram.png"
-                                        alt=""
-                                        class="aside-column__contact-img"
-                                    />
-                                    <div class="aside-column__contact-info">
-                                        <p class="aside-column__contact-name">
-                                            Instagram
-                                        </p>
-                                        <a
-                                            href="#!"
-                                            class="aside-column__contact-link"
-                                        >
-                                            Stevestore.vn
-                                        </a>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <div class="aside-column">
-                                <figure class="aside-column__banner-wrap">
-                                    <a href="#!">
-                                        <img
-                                            src="./assets/img/aside-banner.png"
-                                            alt=""
-                                            class="aside-column__banner-img"
-                                        />
-                                    </a>
-                                </figure>
-                            </div>
-
-                            <section class="aside-column">
-                                <h2 class="aside-column__heading">Tin tức</h2>
-                                <div class="aside-column__post">
-                                    <img
-                                        src="./assets/img/aside-img.png"
-                                        alt=""
-                                        class="aside-column-post__img"
-                                    />
-
-                                    <h3>
-                                        <a
-                                            href="#!"
-                                            class="aside-column__post-title"
-                                        >
-                                            Thêm một sản phẩm valentine nhẹ
-                                            nhàng từ adidas được phân phối bởi
-                                            Stevestore
-                                        </a>
-                                    </h3>
-
-                                    <div class="aside-column__post-info">
-                                        <span class="side-column__post-name">
-                                            <i class="fa-solid fa-user"></i>
-                                            Bùi Ngọc Tuấn
-                                        </span>
-
-                                        <time class="aside-column__post-time">
-                                            <i
-                                                class="fa-regular fa-calendar-days"
-                                            ></i>
-                                            09/02/2019
-                                        </time>
-                                    </div>
-                                </div>
-                            </section>
-                        </aside>
-
-                        <div class="main-content">
-                            <div class="module">
-                                <h2 class="module-heading">MEN</h2>
-                                <div class="module-content">
-                                    <div class="list-man-shoe box__list"></div>
-                                </div>
-                            </div>
-
-                            <div class="slider">
+                <div class="cart-body">
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
                                 <img
-                                    src="./assets/img/slider-1.png"
+                                    src="./assets/img/man-shoes/shoes-1.png"
                                     alt=""
-                                    class="slider-img"
+                                    class="item-cart__img"
                                 />
-                            </div>
-
-                            <div class="module">
-                                <h2 class="module-heading">WOMEN</h2>
-                                <div class="module-content">
-                                    <div
-                                        class="list-women-shoe box__list"
-                                    ></div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Nike Court Legacy Lift 'White Hemp'
+                                    DM7590-100
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price"> 2.650.000₫ </span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total"> 2.650.000₫ </span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/women-shoes/women-shoe-02.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 shadow
+                                    'multicolor' - ci0919-118
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">3.800.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">3.800.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/women-shoes/women-shoe-05.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3 class="item-cart__name">
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 low anniversary
+                                    'white black' - dq7658-100
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">4.250.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">4.250.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/man-shoes/shoes-6.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng air force 1 low anniversary
+                                    'sail malachite' - dq7582-101
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">4.500.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">4.500.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div class="item-cart">
+                        <div class="item-cart__img-wrap" style="width: 17%">
+                            <a href="#!">
+                                <img
+                                    src="./assets/img/man-shoes/shoes-8.png"
+                                    alt=""
+                                    class="item-cart__img"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="item-cart__name-wrap" style="width: 33%">
+                            <h3>
+                                <a href="#!" class="item-cart__name">
+                                    Giày chính hãng cats and sofa pink
+                                </a>
+                            </h3>
+                        </div>
+
+                        <div class="item-cart__price-wrap" style="width: 15%">
+                            <span class="item-cart__price">1.550.000₫</span>
+                        </div>
+
+                        <div
+                            class="item-cart__quantity-wrap"
+                            style="width: 14%"
+                        >
+                            <button class="item-cart__quantity-down">-</button>
+
+                            <span class="item-cart__quantity">1</span>
+                            <button class="item-cart__quantity-up">+</button>
+                        </div>
+
+                        <div class="item-cart__total-wrap" style="width: 15%">
+                            <span class="item-cart__total">1.550.000₫</span>
+                        </div>
+
+                        <div class="item-cart__remove-wrap" style="width: 6%">
+                            <i
+                                class="fa-regular fa-trash-can item-cart__remove"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-cart">
+                    <p class="bottom-cart__title" style="width: 65%">
+                        Tổng tiền
+                    </p>
+
+                    <p class="bottom-cart__price" style="width: 35%">
+                        16.750.000₫
+                    </p>
+                </div>
+                <div class="cart-checkout">
+                    <div class="cart-checkout__left">
+                        <button class="cart-checkout__btn">
+                            Tiếp tục mua hàng
+                        </button>
+                        <button class="cart-checkout__btn">
+                            Xóa toàn bộ đơn hàng
+                        </button>
+                    </div>
+
+                    <div class="art-checkout__right">
+                        <button class="cart-checkout__btn">
+                            TIẾN HÀNH ĐẶT HÀNG
+                        </button>
                     </div>
                 </div>
             </div>
@@ -724,15 +857,5 @@
                 </div>
             </div>
         </footer>
-
-        <div class="modal">
-            <div class="modal__container">
-                <div class="modal__inner"></div>
-            </div>
-        </div>
-
-        <div class="modal-cart"></div>
-
-        <script src="./app.js"></script>
     </body>
 </html>
