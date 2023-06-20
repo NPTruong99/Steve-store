@@ -367,7 +367,9 @@ function renderShoe(shoe, index) {
 
             <div class="box-item__info">
                 <h3>
-                    <a href="#!" class="item-info__name">${shoe.name}</a>
+                    <a href="./product.html" class="item-info__name">${
+                        shoe.name
+                    }</a>
                 </h3>
                 <p class="item-info__size">Size: ${shoe.size}</p>
                 <div class="item-info__price">

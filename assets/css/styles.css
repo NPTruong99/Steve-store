@@ -961,12 +961,16 @@ li {
     color: #000;
 }
 
-.breadcrumb-item:first-child::after {
+.breadcrumb-item::after {
     content: ">>";
     position: absolute;
     top: 0;
     right: -8px;
     color: #ccc;
+}
+
+.breadcrumb-item:last-child::after {
+    content: "";
 }
 
 .main {
