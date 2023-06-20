@@ -333,69 +333,674 @@
         </div>
 
         <div class="product">
-            <figure class="product__img-wrap">
-                <img
-                    src="./assets/img/man-shoes/shoes-1.png"
-                    alt=""
-                    class="product__img"
-                />
-            </figure>
+            <div class="container">
+                <div class="product__inner">
+                    <figure class="product__img-wrap col l-4">
+                        <img
+                            src="./assets/img/man-shoes/shoes-1.png"
+                            alt=""
+                            class="product__img"
+                        />
 
-            <div class="product__info">
-                <h2 class="product__name">
-                    Giày nike court vision low next nature 'sail dark beetroot'
-                    fb8942-133
-                </h2>
-
-                <div class="product-vendor">
-                    <span class="product-brand">
-                        Thương hiệu : <b class="name">Nike</b>
-                    </span>
-
-                    <span>Loại : <b class="name">FB8942-133</b></span>
-                </div>
-
-                <div class="product-review-star">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-
-                <div class="product-price">
-                    <span class="special-price">2.500.000₫</span>
-                    <span class="old-price">5.000.000₫</span>
-                </div>
-
-                <div class="product-desc-wrap">
-                    <label>
-                        <strong>Mô tả</strong>
-                    </label>
-                    <p class="product-desc">
-                        Giày Nike Court Vision Low Next Nature 'Sail Dark
-                        Beetroot' FB8942-133
-                    </p>
-                </div>
-
-                <div class="form-product-wrap">
-                    <form action="" method="post" class="form-product">
-                        <div class="form-product-group">
-                            <label
-                                for="form-product-select"
-                                class="form-product-label"
-                            >
-                                Kích thước
-                            </label>
-                            <select name="" id="form-product-select">
-                                <option value="40">40</option>
-                                <option value="41">41</option>
-                                <option value="42">42</option>
-                            </select>
+                        <div class="list-product-img">
+                            <img
+                                src="./assets/img/man-shoes/shoes-1.png"
+                                alt=""
+                                class="item-product-img"
+                            />
+                            <img
+                                src="./assets/img/man-shoes/shoes-1-1.png"
+                                alt=""
+                                class="item-product-img"
+                            />
+                            <img
+                                src="./assets/img/man-shoes/shoes-1-2.png"
+                                alt=""
+                                class="item-product-img"
+                            />
                         </div>
-                    </form>
+                    </figure>
+
+                    <div class="product__info col l-5">
+                        <h2 class="product__name">
+                            Giày nike court vision low next nature 'sail dark
+                            beetroot' fb8942-133
+                        </h2>
+
+                        <div class="product-vendor">
+                            <span class="product-brand">
+                                Thương hiệu : <b class="name">Nike</b>
+                            </span>
+
+                            <span>Loại : <b class="name">FB8942-133</b></span>
+                        </div>
+
+                        <div class="product-review-star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <div class="product-price">
+                            <span class="special-price">2.500.000₫</span>
+                            <span class="old-price">5.000.000₫</span>
+                        </div>
+
+                        <div class="product-desc-wrap">
+                            <label>
+                                <strong>Mô tả</strong>
+                            </label>
+                            <p class="product-desc">
+                                Giày Nike Court Vision Low Next Nature 'Sail
+                                Dark Beetroot' FB8942-133
+                            </p>
+                        </div>
+
+                        <div class="form-product-wrap">
+                            <form action="" method="post" class="form-product">
+                                <div class="form-product-group">
+                                    <label
+                                        for="form-product-select"
+                                        class="form-product-label"
+                                    >
+                                        Kích thước
+                                    </label>
+                                    <select
+                                        name=""
+                                        id="form-product-select"
+                                        class="form-product-select"
+                                    >
+                                        <option value="40">40</option>
+                                        <option value="41">41</option>
+                                        <option value="42">42</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-product-group">
+                                    <label
+                                        for="form-product-quantity"
+                                        class="form-product-label"
+                                    >
+                                        Số lượng
+                                    </label>
+                                    <input
+                                        type="button"
+                                        value="-"
+                                        class="button-down"
+                                    />
+                                    <input
+                                        type="text"
+                                        name=""
+                                        id="form-product-quantity"
+                                        class="form-product-quantity"
+                                        value="1"
+                                    />
+                                    <input
+                                        type="button"
+                                        value="+"
+                                        class="button-up"
+                                    />
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="form-product-submit"
+                                >
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Thêm vào giỏ hàng
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="product-policy col l-3">
+                        <div class="product-policy-item">
+                            <img
+                                src="./assets/img/policy/policy-1.png"
+                                alt=""
+                                class="product-policy-img"
+                            />
+                            <p class="product-policy-desc">
+                                Ship cod, nhận hàng rồi thanh toán toàn quốc.
+                            </p>
+                        </div>
+
+                        <div class="product-policy-item">
+                            <img
+                                src="./assets/img/policy/policy-2.png"
+                                alt=""
+                                class="product-policy-img"
+                            />
+                            <p class="product-policy-desc">
+                                Giao hàng ngay sau khi đặt hàng.
+                            </p>
+                        </div>
+
+                        <div class="product-policy-item">
+                            <img
+                                src="./assets/img/policy/policy-3.png"
+                                alt=""
+                                class="product-policy-img"
+                            />
+                            <p class="product-policy-desc">
+                                Đổi hàng trong vòng 3 ngày.
+                            </p>
+                        </div>
+
+                        <div class="product-policy-item">
+                            <img
+                                src="./assets/img/policy/policy-4.png"
+                                alt=""
+                                class="product-policy-img"
+                            />
+                            <p class="product-policy-desc">
+                                Cam kết Steve Store chỉ bán hàng chính hãng.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="related-product">
+            <div class="container">
+                <div class="related-product__inner">
+                    <h2 class="related-product-heading">SẢN PHẨM LIÊN QUAN</h2>
+                    <div class="list-related-product">
+                        <article class="box-item">
+                            <figure class="box__item-img">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/man-shoes/shoes-2.png"
+                                        alt=""
+                                        class="box-item__thumb"
+                                    />
+                                </a>
+
+                                <div class="box__item-overlay">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/man-shoes/shoes-2-1.png"
+                                            class="box-item__thumb"
+                                        />
+                                    </a>
+                                    <div class="item-overlay__action">
+                                        <a href="#!" class="btn btn-product">
+                                            <i
+                                                class="fa-solid fa-gear btn-product__icon"
+                                            ></i>
+                                            Tùy chọn
+                                        </a>
+
+                                        <button class="btn btn-quick-view">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                            Xem nhanh
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+
+                            <div class="box-item__info">
+                                <h3>
+                                    <a
+                                        href="./product.html"
+                                        class="item-info__name"
+                                    >
+                                        Giày nike air force 1 low white grey
+                                        dv0788-100
+                                    </a>
+                                </h3>
+                                <p class="item-info__size">Size: 40, 41, 42</p>
+                                <div class="item-info__price">
+                                    <p class="info-price__sale">3.950.000₫</p>
+
+                                    <p class="info-price__old">5.000.000₫</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="box-item">
+                            <figure class="box__item-img">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/man-shoes/shoes-5.png"
+                                        alt=""
+                                        class="box-item__thumb"
+                                    />
+                                </a>
+
+                                <div class="box__item-overlay">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/man-shoes/shoes-5-1.png"
+                                            class="box-item__thumb"
+                                        />
+                                    </a>
+                                    <div class="item-overlay__action">
+                                        <a href="#!" class="btn btn-product">
+                                            <i
+                                                class="fa-solid fa-gear btn-product__icon"
+                                            ></i>
+                                            Tùy chọn
+                                        </a>
+
+                                        <button class="btn btn-quick-view">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                            Xem nhanh
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+
+                            <div class="box-item__info">
+                                <h3>
+                                    <a
+                                        href="./product.html"
+                                        class="item-info__name"
+                                    >
+                                        Giày chính hãng cats and sofa og
+                                    </a>
+                                </h3>
+                                <p class="item-info__size">Size: 40, 41, 42</p>
+                                <div class="item-info__price">
+                                    <p class="info-price__sale">1.550.000₫</p>
+
+                                    <p class="info-price__old">8.500.000₫</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="box-item">
+                            <figure class="box__item-img">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/man-shoes/shoes-6.png"
+                                        alt=""
+                                        class="box-item__thumb"
+                                    />
+                                </a>
+
+                                <div class="box__item-overlay">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/man-shoes/shoes-6-1.png"
+                                            class="box-item__thumb"
+                                        />
+                                    </a>
+                                    <div class="item-overlay__action">
+                                        <a href="#!" class="btn btn-product">
+                                            <i
+                                                class="fa-solid fa-gear btn-product__icon"
+                                            ></i>
+                                            Tùy chọn
+                                        </a>
+
+                                        <button class="btn btn-quick-view">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                            Xem nhanh
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+
+                            <div class="box-item__info">
+                                <h3>
+                                    <a
+                                        href="./product.html"
+                                        class="item-info__name"
+                                    >
+                                        Giày chính hãng air force 1 low
+                                        anniversary 'sail malachite' -
+                                        dq7582-101
+                                    </a>
+                                </h3>
+                                <p class="item-info__size">Size: 40, 41, 42</p>
+                                <div class="item-info__price">
+                                    <p class="info-price__sale">4.500.000₫</p>
+
+                                    <p class="info-price__old">5.000.000₫</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="box-item">
+                            <figure class="box__item-img">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/man-shoes/shoes-7.png"
+                                        alt=""
+                                        class="box-item__thumb"
+                                    />
+                                </a>
+
+                                <div class="box__item-overlay">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/man-shoes/shoes-7-1.png"
+                                            class="box-item__thumb"
+                                        />
+                                    </a>
+                                    <div class="item-overlay__action">
+                                        <a href="#!" class="btn btn-product">
+                                            <i
+                                                class="fa-solid fa-gear btn-product__icon"
+                                            ></i>
+                                            Tùy chọn
+                                        </a>
+
+                                        <button class="btn btn-quick-view">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                            Xem nhanh
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+
+                            <div class="box-item__info">
+                                <h3>
+                                    <a
+                                        href="./product.html"
+                                        class="item-info__name"
+                                    >
+                                        Giày chính hãng cats and sofa green
+                                    </a>
+                                </h3>
+                                <p class="item-info__size">Size: 40, 41, 42</p>
+                                <div class="item-info__price">
+                                    <p class="info-price__sale">1.350.000₫</p>
+
+                                    <p class="info-price__old">1.550.000₫</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="box-item">
+                            <figure class="box__item-img">
+                                <a href="#!">
+                                    <img
+                                        src="./assets/img/man-shoes/shoes-8.png"
+                                        alt=""
+                                        class="box-item__thumb"
+                                    />
+                                </a>
+
+                                <div class="box__item-overlay">
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/man-shoes/shoes-8-1.png"
+                                            class="box-item__thumb"
+                                        />
+                                    </a>
+                                    <div class="item-overlay__action">
+                                        <a href="#!" class="btn btn-product">
+                                            <i
+                                                class="fa-solid fa-gear btn-product__icon"
+                                            ></i>
+                                            Tùy chọn
+                                        </a>
+
+                                        <button class="btn btn-quick-view">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass"
+                                            ></i>
+                                            Xem nhanh
+                                        </button>
+                                    </div>
+                                </div>
+                            </figure>
+
+                            <div class="box-item__info">
+                                <h3>
+                                    <a
+                                        href="./product.html"
+                                        class="item-info__name"
+                                    >
+                                        Giày chính hãng cats and sofa pink
+                                    </a>
+                                </h3>
+                                <p class="item-info__size">Size: 40, 41, 42</p>
+                                <div class="item-info__price">
+                                    <p class="info-price__sale">1.500.000₫</p>
+
+                                    <p class="info-price__old">1.850.000₫</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-top">
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">THÔNG TIN CÔNG TY</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Tìm kiếm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">ĐIỀU KHOẢN</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Điều khoản sử dụng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Điều khoản giao dịch
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Dịch vụ tiện ích
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Quyền sở hữu trí tuệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">HƯỚNG DẪN</h3>
+                            <ul class="footer-column__list">
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Hướng dẫn mua hàng
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Giao nhận và thanh toán
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Đổi trả và bảo hành
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#!" class="footer-column__link">
+                                        Đăng ký thành viên
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-top__column">
+                            <h3 class="footer-heading">
+                                THEO DÕI CHÚNG TÔI TRÊN
+                            </h3>
+                            <ul class="footer-column__list">
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-facebook footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-instagram footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Instagram
+                                    </a>
+                                </li>
+                                <li class="footer-column__item">
+                                    <i
+                                        class="fa-brands fa-tiktok footer-column__icon"
+                                    ></i>
+                                    <a href="#!" class="footer-column__link">
+                                        Tiktok
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-mid">
+                        <div class="payment__methods">
+                            <h3 class="footer-heading">HỖ TRỢ THANH TOÁN</h3>
+                            <ul class="list-payment">
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_1.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_2.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_3.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_4.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                                <li class="payment-method">
+                                    <img
+                                        src="./assets/img/payment/payment_5.png"
+                                        alt=""
+                                        class="payment-method__img"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="customer__care">
+                            <h3 class="footer-heading">GIẢI ĐÁP THẮC MẮC</h3>
+
+                            <div class="customer-care__content">
+                                <div class="customer-care__img-wrap">
+                                    <img
+                                        src="./assets/img/customer_care_image.png"
+                                        alt=""
+                                        class="customer-care__img"
+                                    />
+                                </div>
+
+                                <ul class="list-customer-care">
+                                    <li class="item-customer-care">
+                                        <p class="customer-care-title">
+                                            Tư vấn miễn phí (9h-22h)
+                                        </p>
+
+                                        <p class="customer-care-phone">
+                                            0858 28 27 28
+                                        </p>
+                                    </li>
+
+                                    <li class="item-customer-care">
+                                        <p class="customer-care-title">
+                                            Góp ý, phản ánh
+                                        </p>
+
+                                        <p class="customer-care-phone">
+                                            0943 969 969
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <h3 class="footer-heading">STEVE STORE</h3>
+                        <p class="store-address">
+                            177 - Phố Huế - Hai Bà Trưng - Hà Nội
+                        </p>
+
+                        <p class="store-phone">Điện thoại : 0858.28.27.28</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-cpy">
+                <div class="footer-cpy__inner">
+                    <div class="container">
+                        <p class="footer-cpy-text">
+                            &copy Bản quyền thuộc về STEVE STORE | Cung cấp bởi
+                            Bizweb
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const productImg = document.querySelector(".product__img");
+            const subImgs = document.querySelectorAll(".item-product-img");
+
+            for (const subImg of subImgs) {
+                subImg.addEventListener("click", () => {
+                    productImg.src = subImg.src;
+                });
+            }
+        </script>
     </body>
 </html>
