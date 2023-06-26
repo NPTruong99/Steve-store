@@ -1428,3 +1428,56 @@ li {
 .form-action__link:hover {
     opacity: 0.7;
 }
+
+/* ======================== Status ======================== */
+.status {
+    position: fixed;
+    top: 80px;
+    left: 30px;
+    width: 300px;
+    height: 150px;
+    display: none;
+}
+
+.status-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    animation: opacityAnimation 1s alternate-reverse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.status-item__heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #609966;
+    text-align: center;
+    line-height: 1.4;
+    color: #000;
+}
+
+.icon__success {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px;
+    color: #609966;
+}
+
+.status-item__message {
+    font-size: 12px;
+    color: #9dc08b;
+    text-align: center;
+    color: #000;
+}
+
+/* Animation Keyframe*/
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

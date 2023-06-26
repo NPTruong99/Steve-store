@@ -21,8 +21,8 @@ let dataShoes = {
             salePrice: 3950000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-2.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-2-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-2-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -33,8 +33,8 @@ let dataShoes = {
             salePrice: 4950000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-3.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-3-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-3-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -45,8 +45,8 @@ let dataShoes = {
             salePrice: 4500000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-4.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-4-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-4-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -57,8 +57,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-5.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-5-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-5-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -69,8 +69,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-6.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-6-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-6-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -81,8 +81,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-7.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-7-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-7-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -93,8 +93,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/man-shoes/shoes-8.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/man-shoes/shoes-8-1.png",
+            subImg2: "./assets/img/man-shoes/shoes-8-2.png",
             size: "39 40 41 42",
             tag: 1,
         },
@@ -106,8 +106,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-01.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-01-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-01-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -118,8 +118,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-02.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-02-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-02-1.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -130,8 +130,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-03.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-03-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-03-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -142,8 +142,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-04.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-04-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-04-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -154,7 +154,7 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-05.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-05-1.png",
             subImg2: "./assets/img/man-shoes/shoes-1-2.png",
             size: "39 40 41 42",
             tag: 2,
@@ -166,8 +166,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-06.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-06-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-06-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -178,8 +178,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-07.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-07-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-07-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -190,8 +190,8 @@ let dataShoes = {
             salePrice: 2500000,
             oldPrice: 5000000,
             img: "./assets/img/women-shoes/women-shoe-08.png",
-            subImg1: "./assets/img/man-shoes/shoes-1-1.png",
-            subImg2: "./assets/img/man-shoes/shoes-1-2.png",
+            subImg1: "./assets/img/women-shoes/women-shoe-08-1.png",
+            subImg2: "./assets/img/women-shoes/women-shoe-08-2.png",
             size: "39 40 41 42",
             tag: 2,
         },
@@ -306,6 +306,8 @@ const cartContent = $(".cart-content");
 const cartQty = $(".cart-qty");
 const listCart = $(".cart-list");
 const resultPrice = $(".cart-total__price");
+const statusAddCart = $(".status");
+const listStatus = $(".list-status");
 
 // App start
 function app() {
@@ -401,17 +403,17 @@ function handleQuickViewClick(tag, indexList) {
                         </figure>
                         <div class="modal__sub-img-wrap">
                             <img
-                                srcset="./assets/img/man-shoes/shoes-2.png"
+                                srcset="${checkTag(tag, indexList)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
                             <img
-                                srcset="./assets/img/man-shoes/shoes-3.png"
+                                srcset="${checkTag1(tag, indexList)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
                             <img
-                                srcset="./assets/img/man-shoes/shoes-4.png"
+                                srcset="${checkTag2(tag, indexList)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
@@ -502,7 +504,32 @@ function handleAddCartClick(tag, indexList) {
             listCartData[indexList].ID__LIST = indexList;
         }
     }
+
+    statusAddCart.style.display = "block";
+    let status = document.createElement("li");
+    status.classList.add("status-item");
+    status.innerHTML = `
+                        <div class="status-item__contain">
+                            <h3 class="status-item__heading">SẢN PHẨM ĐÃ ĐƯỢC THÊM VÀO GIỎ HÀNG</h3>
+
+                            <div class="icon__success">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="status-item__message">
+                                “Bạn đã thêm sản phẩm vào giỏ hàng <i class="fa-solid fa-cart-shopping"></i>”
+                            </div>
+                        </div>
+                        `;
+
+    listStatus.appendChild(status);
+    removeStatus(status);
     resetCartData();
+}
+
+function removeStatus(status) {
+    setTimeout(() => {
+        listStatus.removeChild(status);
+    }, 1000);
 }
 
 function resetCartData() {
@@ -584,6 +611,22 @@ function checkTag(tag, indexList) {
         return dataShoes.manShoes[indexList].img;
     } else if (tag == 2) {
         return dataShoes.womenShoes[indexList].img;
+    }
+}
+
+function checkTag1(tag, indexList) {
+    if (tag == 1) {
+        return dataShoes.manShoes[indexList].subImg1;
+    } else if (tag == 2) {
+        return dataShoes.womenShoes[indexList].subImg1;
+    }
+}
+
+function checkTag2(tag, indexList) {
+    if (tag == 1) {
+        return dataShoes.manShoes[indexList].subImg2;
+    } else if (tag == 2) {
+        return dataShoes.womenShoes[indexList].subImg2;
     }
 }
 
