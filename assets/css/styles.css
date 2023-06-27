@@ -147,7 +147,7 @@ li {
 
 .header-main__logo {
     height: 262px;
-    margin-top: -72px;
+    margin-top: -82px;
 }
 
 /* Header search form */
@@ -1429,6 +1429,28 @@ li {
     opacity: 0.7;
 }
 
+/* ======================== Contact ======================== */
+.contact-phone,
+.contact-message {
+    position: fixed;
+    bottom: 80px;
+    left: 60px;
+    font-size: 3rem;
+    background: #3cc0f3;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-message {
+    right: 60px;
+    left: unset;
+}
 /* ======================== Status ======================== */
 .status {
     position: fixed;

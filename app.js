@@ -324,20 +324,20 @@ function renderShoes() {
 
 function renderListManShoes() {
     const htmls = dataShoes.manShoes.map((shoe, index) => {
-        return renderShoe(shoe, index);
+        return renderManShoe(shoe, index);
     });
     listManShoes.innerHTML = htmls.join("");
 }
 
 function renderListWomenShoes() {
     const htmls = dataShoes.womenShoes.map((shoe, index) => {
-        return renderShoe(shoe, index);
+        return renderWomenShoe(shoe, index);
     });
     listWomenShoes.innerHTML = htmls.join("");
 }
 
 // Function render shoe
-function renderShoe(shoe, index) {
+function renderManShoe(shoe, index) {
     return `
         <article class="box-item">
             <figure class="box__item-img">
@@ -359,7 +359,7 @@ function renderShoe(shoe, index) {
 
                         <button class="btn btn-quick-view" onclick="handleQuickViewClick(${
                             shoe.tag
-                        }, ${index + 0})">
+                        }, ${index}, ${index})">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             Xem nhanh
                         </button>
@@ -388,7 +388,58 @@ function renderShoe(shoe, index) {
     `;
 }
 
-function handleQuickViewClick(tag, indexList) {
+function renderWomenShoe(shoe, index) {
+    return `
+        <article class="box-item">
+            <figure class="box__item-img">
+                <a href="#!">
+                    <img srcset="${shoe.img}" alt="" class="box-item__thumb">
+                </a>
+
+                <div class="box__item-overlay">
+                    <a href="#!">
+                        <img srcset="${
+                            shoe.subImg1
+                        } 2x" alt="" class="box-item__thumb">
+                    </a>
+                    <div class="item-overlay__action">
+                        <a href="#!" class="btn btn-product">
+                            <i class="fa-solid fa-gear btn-product__icon"></i>
+                            Tùy chọn
+                        </a>
+
+                        <button class="btn btn-quick-view" onclick="handleQuickViewClick(${
+                            shoe.tag
+                        }, ${index}, ${index + dataShoes.manShoes.length})">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Xem nhanh
+                        </button>
+                    </div>
+                </div>
+            </figure>
+
+            <div class="box-item__info">
+                <h3>
+                    <a href="./product.html" class="item-info__name">${
+                        shoe.name
+                    }</a>
+                </h3>
+                <p class="item-info__size">Size: ${shoe.size}</p>
+                <div class="item-info__price">
+                    <p class="info-price__sale">
+                       ${convert(shoe.salePrice)}
+                    </p>
+
+                    <p class="info-price__old">
+                       ${convert(shoe.oldPrice)}
+                    </p>
+                </div>
+            </div>
+        </article>
+    `;
+}
+
+function handleQuickViewClick(tag, indexData, indexList) {
     openModal();
     console.log(tag);
     modalInner.innerHTML = `
@@ -396,24 +447,24 @@ function handleQuickViewClick(tag, indexList) {
         <div class="modal__media-wrap col l-5">
                         <figure class="modal__img-wrap">
                             <img
-                            srcset="${checkTag(tag, indexList)}"
+                            srcset="${checkTag(tag, indexData)}"
                             alt=""
                             class="modal__img"
                             />
                         </figure>
                         <div class="modal__sub-img-wrap">
                             <img
-                                srcset="${checkTag(tag, indexList)}"
+                                srcset="${checkTag(tag, indexData)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
                             <img
-                                srcset="${checkTag1(tag, indexList)}"
+                                srcset="${checkTag1(tag, indexData)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
                             <img
-                                srcset="${checkTag2(tag, indexList)}"
+                                srcset="${checkTag2(tag, indexData)}"
                                 alt=""
                                 class="modal__sub-img"
                             />
@@ -421,7 +472,7 @@ function handleQuickViewClick(tag, indexList) {
                     </div>
                     <div class="modal__info col l-7">
                         <h2 class="modal-info__name">
-                            ${checkTagName(tag, indexList)}
+                            ${checkTagName(tag, indexData)}
                         </h2>
 
                         <div class="modal-vendor-type">
@@ -440,7 +491,7 @@ function handleQuickViewClick(tag, indexList) {
 
                         <div class="modal__desc-wrap">
                             <p class="modal__desc">
-                            ${checkTagName(tag, indexList)}
+                            ${checkTagName(tag, indexData)}
                                 <a href="">[Xem chi tiết...]</a>
                             </p>
                         </div>
@@ -459,7 +510,7 @@ function handleQuickViewClick(tag, indexList) {
                             </select>
                         </div>
 
-                        <button class="add-cart" onclick="handleAddCartClick(${tag}, ${indexList})">Thêm vào giỏ hàng</button>
+                        <button class="add-cart" onclick="handleAddCartClick(${tag}, ${indexData}, ${indexList})">Thêm vào giỏ hàng</button>
                     </div>
     `;
 
@@ -488,20 +539,24 @@ function closeModal() {
     modalInner.innerHTML = "";
 }
 
-function handleAddCartClick(tag, indexList) {
+function handleAddCartClick(tag, indexData, indexList) {
     closeModal();
 
     if (tag == 1) {
         if (listCartData[indexList] == null) {
-            listCartData[indexList] = dataShoes.manShoes[indexList];
+            listCartData[indexList] = dataShoes.manShoes[indexData];
             listCartData[indexList].cartQty = 1;
             listCartData[indexList].ID__LIST = indexList;
+        } else {
+            listCartData[indexList].cartQty += 1;
         }
     } else if (tag == 2) {
         if (listCartData[indexList] == null) {
-            listCartData[indexList] = dataShoes.womenShoes[indexList];
+            listCartData[indexList] = dataShoes.womenShoes[indexData];
             listCartData[indexList].cartQty = 1;
             listCartData[indexList].ID__LIST = indexList;
+        } else {
+            listCartData[indexList].cartQty += 1;
         }
     }
 
@@ -524,6 +579,7 @@ function handleAddCartClick(tag, indexList) {
     listStatus.appendChild(status);
     removeStatus(status);
     resetCartData();
+    console.log(indexList);
 }
 
 function removeStatus(status) {
@@ -606,35 +662,35 @@ function resetCartData() {
     });
 }
 
-function checkTag(tag, indexList) {
+function checkTag(tag, indexData) {
     if (tag == 1) {
-        return dataShoes.manShoes[indexList].img;
+        return dataShoes.manShoes[indexData].img;
     } else if (tag == 2) {
-        return dataShoes.womenShoes[indexList].img;
+        return dataShoes.womenShoes[indexData].img;
     }
 }
 
-function checkTag1(tag, indexList) {
+function checkTag1(tag, indexData) {
     if (tag == 1) {
-        return dataShoes.manShoes[indexList].subImg1;
+        return dataShoes.manShoes[indexData].subImg1;
     } else if (tag == 2) {
-        return dataShoes.womenShoes[indexList].subImg1;
+        return dataShoes.womenShoes[indexData].subImg1;
     }
 }
 
-function checkTag2(tag, indexList) {
+function checkTag2(tag, indexData) {
     if (tag == 1) {
-        return dataShoes.manShoes[indexList].subImg2;
+        return dataShoes.manShoes[indexData].subImg2;
     } else if (tag == 2) {
-        return dataShoes.womenShoes[indexList].subImg2;
+        return dataShoes.womenShoes[indexData].subImg2;
     }
 }
 
-function checkTagName(tag, indexList) {
+function checkTagName(tag, indexData) {
     if (tag == 1) {
-        return dataShoes.manShoes[indexList].name;
+        return dataShoes.manShoes[indexData].name;
     } else if (tag == 2) {
-        return dataShoes.womenShoes[indexList].name;
+        return dataShoes.womenShoes[indexData].name;
     }
 }
 
